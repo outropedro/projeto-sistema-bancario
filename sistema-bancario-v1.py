@@ -3,6 +3,7 @@ limite = 500
 saldo = 0
 extrato = ""
 numero_de_saques = 0
+opcao = 0
 menu = f"""
 ############################
                          
@@ -25,7 +26,7 @@ while True:
                 saldo += deposito
                 extrato += f"Deposito: R$ {deposito:.2f}\n"
                 
-                realizar_nova_acao = int(input("Deseja realizar novo deposito?\n1 - Sim\n2 - Não"))
+                realizar_nova_acao = int(input("Deseja realizar novo deposito?\n1 - Sim\n2 - Não\n"))
                 if realizar_nova_acao == 1: opcao = 1
                 
             else: 
@@ -48,7 +49,7 @@ while True:
                 numero_de_saques += 1
                 extrato += f"Saque: R$ {sacar:.2f}\n"
                 
-                realizar_nova_acao = int(input("Deseja realizar novo saque?\n1 - Sim\n2 - Não"))
+                realizar_nova_acao = int(input("Deseja realizar novo saque?\n1 - Sim\n2 - Não\n"))
                 if realizar_nova_acao == 1: opcao = 2
             
             else: 
