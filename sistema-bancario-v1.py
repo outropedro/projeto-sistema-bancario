@@ -54,6 +54,8 @@ while True:
         print("Não foram realizadas moviemntações." if not extrato else extrato)
         print(f"\nSALDO: R$ {saldo:.2f}")
         
+        realizar_nova_acao = int(input("Deseja realizar mais algum procedimento?\n1 - Sim\n 2 - Não"))
+        if realizar_nova_acao == 2:  break
         
     elif opcao == 4:
         break     
